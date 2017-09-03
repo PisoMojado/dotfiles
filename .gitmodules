@@ -7,3 +7,6 @@
 [submodule "zshdots"]
 	path = zshdots
 	url = git@github.com:PisoMojado/zshdots.git
+[submodule "c6f872914e74217a3b52e84a867459e0"]
+	path = termopen
+	url = git@gist.github.com:c6f872914e74217a3b52e84a867459e0.git
