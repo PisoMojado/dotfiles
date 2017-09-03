@@ -1,0 +1,9 @@
+[submodule ".tmux"]
+	path = .tmux
+	url = git@github.com:gpakosz/.tmux.git
+[submodule "bashdots"]
+	path = bashdots
+	url = git@github.com:PisoMojado/bashdots.git
+[submodule "zshdots"]
+	path = zshdots
+	url = git@github.com:PisoMojado/zshdots.git
