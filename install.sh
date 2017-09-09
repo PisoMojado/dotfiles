@@ -1,8 +1,8 @@
-#!/usr/bin/env bash
+#!/usr/bin/env sh
 
 DOT_DIR="$( cd "$( dirname "$0" )" && pwd )"
 
-cd "${ZSH_DOT_DIR}"
+cd "${DOT_DIR}"
 git submodule update --init --recursive
 cd -
 
