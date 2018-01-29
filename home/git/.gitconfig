@@ -6,3 +6,5 @@
 	signingkey = E416D8BC
 [push]
 	default = simple
+[protocol "keybase"]
+	allow = always
