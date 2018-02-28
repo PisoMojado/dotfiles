@@ -7,6 +7,9 @@ shift + cmd - r : osascript -e 'tell app "loginwindow" to «event aevtrrst»'
 # shutdown host
 shift + cmd - p : osascript -e 'tell app "loginwindow" to «event aevtrsdn»'
 
+# log out
+shift + cmd - o : osascript -e 'tell app "System Events" to log out'
+
 # open Steam in Big Picture Mode
 cmd - b : /Applications/Steam.app/Contents/MacOS/steam.sh -bigpicture
 
