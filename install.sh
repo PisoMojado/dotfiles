@@ -21,6 +21,7 @@ then
     stow -d ${DOT_DIR}/home -t ${HOME} npm
     stow -d ${DOT_DIR}/home -t ${HOME} tmux
     stow -d ${DOT_DIR}/home -t ${HOME} vim
+    stow -d ${DOT_DIR}/home -t ${HOME} gnupg
 else
     echo "Please install GNU Stow before running installer"
 fi
