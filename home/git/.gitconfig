@@ -8,3 +8,5 @@
 	default = simple
 [protocol "keybase"]
 	allow = always
+[commit]
+	gpgsign = true
