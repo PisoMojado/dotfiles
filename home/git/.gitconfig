@@ -10,3 +10,5 @@
 	allow = always
 [commit]
 	gpgsign = true
+[alias]
+	plog = "log --all --graph"
