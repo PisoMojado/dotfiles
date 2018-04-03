@@ -11,7 +11,7 @@ shift + cmd - p : osascript -e 'tell app "loginwindow" to «event aevtrsdn»'
 shift + cmd - o : osascript -e 'tell app "System Events" to log out'
 
 # open Steam in Big Picture Mode
-cmd - b : /Applications/Steam.app/Contents/MacOS/steam.sh -bigpicture
+#cmd - b : /Applications/Steam.app/Contents/MacOS/steam.sh -bigpicture
 
 # open new chrome window
 cmd - g : /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome
