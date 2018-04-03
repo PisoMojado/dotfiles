@@ -11,4 +11,4 @@
 [commit]
 	gpgsign = true
 [alias]
-	plog = "log --all --graph"
+	plog = "log --graph --all --show-signature"
