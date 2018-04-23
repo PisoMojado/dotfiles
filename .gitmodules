@@ -10,3 +10,6 @@
 [submodule "home/emacs/.emacs.d"]
 	path = home/emacs/.emacs.d
 	url = git@github.com:syl20bnr/spacemacs.git
+[submodule "home/tmux/.tmux/plugins/tpm"]
+	path = home/tmux/.tmux/plugins/tpm
+	url = git@github.com:tmux-plugins/tpm.git
