@@ -19,3 +19,6 @@
 [submodule "home/tmux/.tmux/plugins/tmux-themepack"]
 	path = home/tmux/.tmux/plugins/tmux-themepack
 	url = git@github.com:jimeh/tmux-themepack.git
+[submodule "home/tmux/.tmux/plugins/tmux-pain-control"]
+	path = home/tmux/.tmux/plugins/tmux-pain-control
+	url = git@github.com:tmux-plugins/tmux-pain-control.git
