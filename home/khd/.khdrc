@@ -1,5 +1,24 @@
 # open new terminal window
-cmd - return : ~/.local/bin/termopen
+cmd - return : osascript -e 'tell application "iTerm2" to create window with default profile' || open -na /Applications/iTerm.app
+shift + cmd - return : ~/.local/bin/termopen
+
+# open new emacs window
+cmd - e : osascript -e 'tell application "Emacs.app" to activate'
+
+# open new chrome window
+cmd - g : /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome
+ 
+# open fusion
+cmd - u : /Applications/VMware\ Fusion.app/Contents/MacOS/VMware\ Fusion 
+
+# lock the screen
+cmd - l : /System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend
+
+# Open music app
+cmd - m : osascript -e 'tell application "Google Play Music Desktop Player.app" to activate'
+
+# Open finder window
+cmd - f : open ~/
 
 # restart host
 shift + cmd - r : osascript -e 'tell app "loginwindow" to «event aevtrrst»'
@@ -12,15 +31,6 @@ shift + cmd - o : osascript -e 'tell app "System Events" to log out'
 
 # open Steam in Big Picture Mode
 #cmd - b : /Applications/Steam.app/Contents/MacOS/steam.sh -bigpicture
-
-# open new chrome window
-cmd - g : /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome
- 
-# open fusion
-cmd - u : /Applications/VMware\ Fusion.app/Contents/MacOS/VMware\ Fusion 
-
-# lock the screen
-cmd - l : /System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend
 
 # reload config
 cmd + alt + ctrl - r : khd -e "reload"
