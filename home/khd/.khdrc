@@ -2,8 +2,11 @@
 cmd - return : osascript -e 'tell application "iTerm2" to create window with default profile' || open -na /Applications/iTerm.app
 shift + cmd - return : ~/.local/bin/termopen
 
+# Open finder window
+shift + cmd - f : open ~/
+
 # open new emacs window
-cmd - e : osascript -e 'tell application "Emacs.app" to activate'
+cmd -e : osascript -e 'tell application "EmacsMac.app" to activate' && /opt/local/bin/emacsclient -n -c -e '(spacemacs/home)'
 
 # open new chrome window
 cmd - g : /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome
@@ -11,14 +14,14 @@ cmd - g : /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome
 # open fusion
 cmd - u : /Applications/VMware\ Fusion.app/Contents/MacOS/VMware\ Fusion 
 
-# lock the screen
-cmd - l : /System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend
-
 # Open music app
 cmd - m : osascript -e 'tell application "Google Play Music Desktop Player.app" to activate'
 
-# Open finder window
-cmd - f : open ~/
+# open Steam in Big Picture Mode
+#cmd - b : /Applications/Steam.app/Contents/MacOS/steam.sh -bigpicture
+
+# lock the screen
+cmd - l : /System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend
 
 # restart host
 shift + cmd - r : osascript -e 'tell app "loginwindow" to «event aevtrrst»'
@@ -28,9 +31,6 @@ shift + cmd - p : osascript -e 'tell app "loginwindow" to «event aevtrsdn»'
 
 # log out
 shift + cmd - o : osascript -e 'tell app "System Events" to log out'
-
-# open Steam in Big Picture Mode
-#cmd - b : /Applications/Steam.app/Contents/MacOS/steam.sh -bigpicture
 
 # reload config
 cmd + alt + ctrl - r : khd -e "reload"
