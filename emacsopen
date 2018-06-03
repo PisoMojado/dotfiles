@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+set -e
+
+COUNT=$(ps aux | grep -c EmacsMac)
+osascript -e 'tell application "EmacsMac.app" to activate'
+if [ $COUNT -gt 1 ]
+then
+  /opt/local/bin/emacsclient -n -c -e '(spacemacs/home)'
+fi

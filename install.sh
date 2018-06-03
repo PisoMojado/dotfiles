@@ -32,3 +32,7 @@ then
     ln -s ${DOT_DIR}/termopen/termopen.macos.sh ${HOME}/.local/bin/termopen
 fi
 
+if [ ! -f "${HOME}/.local/bin/emacsopen" ]
+then
+	ln -s ${DOT_DIR}/emacsopen ${HOME}/.local/bin/emacsopen
+fi
