@@ -6,10 +6,11 @@ shift + cmd - return : ~/.local/bin/termopen
 shift + cmd - f : open ~/
 
 # open new emacs window
-cmd -e : osascript -e 'tell application "EmacsMac.app" to activate' && /opt/local/bin/emacsclient -n -c -e '(spacemacs/home)'
+cmd -e : ~/.local/bin/emacsopen
 
 # open new chrome window
 cmd - g : /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome
+#cmd - h : /Users/michael/Applications/Chrome\ Apps.localized/Profile\ 1\ knipolnnllmklapflnccelgolnpehhpl.app/Contents/MacOS/app_mode_loader
  
 # open fusion
 cmd - u : /Applications/VMware\ Fusion.app/Contents/MacOS/VMware\ Fusion 
@@ -81,14 +82,14 @@ shift + alt - 6 : /opt/local/bin/chunkc tiling::window --send-to-desktop 6
 
 # send window to desktop and switch desktop
 shift + cmd - x : `id=$(/opt/local/bin/chunkc get _last_active_desktop); /opt/local/bin/chunkc tiling::window -d $id; khd -p "cmd + alt - $id" &> /dev/null`
-shift + cmd - z : /opt/local/bin/chunkc tiling::window -d prev; khd -p "cmd + alt - z"
-shift + cmd - c : /opt/local/bin/chunkc tiling::window -d next; khd -p "cmd + alt - c"
-shift + cmd - 1 : /opt/local/bin/chunkc tiling::window -d 1; khd -p "cmd + alt - 1"
-shift + cmd - 2 : /opt/local/bin/chunkc tiling::window -d 2; khd -p "cmd + alt - 2"
-shift + cmd - 3 : /opt/local/bin/chunkc tiling::window -d 3; khd -p "cmd + alt - 3"
-shift + cmd - 4 : /opt/local/bin/chunkc tiling::window -d 4; khd -p "cmd + alt - 4"
-shift + cmd - 5 : /opt/local/bin/chunkc tiling::window -d 5; khd -p "cmd + alt - 5"
-shift + cmd - 6 : /opt/local/bin/chunkc tiling::window -d 6; khd -p "cmd + alt - 6"
+shift + cmd - z : /opt/local/bin/chunkc tiling::window -d prev; khd -p "alt - z"
+shift + cmd - c : /opt/local/bin/chunkc tiling::window -d next; khd -p "alt - c"
+shift + cmd - 1 : /opt/local/bin/chunkc tiling::window -d 1; khd -p "alt - 1"
+shift + cmd - 2 : /opt/local/bin/chunkc tiling::window -d 2; khd -p "alt - 2"
+shift + cmd - 3 : /opt/local/bin/chunkc tiling::window -d 3; khd -p "alt - 3"
+shift + cmd - 4 : /opt/local/bin/chunkc tiling::window -d 4; khd -p "alt - 4"
+shift + cmd - 5 : /opt/local/bin/chunkc tiling::window -d 5; khd -p "alt - 5"
+shift + cmd - 6 : /opt/local/bin/chunkc tiling::window -d 6; khd -p "alt - 6"
 
 # switch to last active desktop
 cmd + alt - x   : `id=$(/opt/local/bin/chunkc get _last_active_desktop); khd -p "cmd + alt - $id" &> /dev/null`
