@@ -12,3 +12,5 @@
 	gpgsign = true
 [alias]
 	plog = "log --graph --all --show-signature"
+[diff]
+	renameLimit = 35999
