@@ -9,6 +9,7 @@ cd -
 # Install dot files for pre-req projects
 ${DOT_DIR}/bashdots/install.sh
 ${DOT_DIR}/zshdots/install.sh
+${DOT_DIR}/fishdots/install.sh
 
 # Install dot files local to this project
 which stow

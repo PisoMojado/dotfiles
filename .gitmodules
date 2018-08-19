@@ -22,3 +22,6 @@
 [submodule "home/tmux/.tmux/plugins/tmux-pain-control"]
 	path = home/tmux/.tmux/plugins/tmux-pain-control
 	url = git@github.com:tmux-plugins/tmux-pain-control.git
+[submodule "fishdots"]
+	path = fishdots
+	url = git@github.com:PisoMojado/fishdots.git
