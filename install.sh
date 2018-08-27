@@ -1,4 +1,4 @@
-#!/usr/bin/env sh
+#!/usr/bin/env bash
 
 DOT_DIR="$( cd "$( dirname "$0" )" && pwd )"
 
@@ -23,6 +23,7 @@ then
     stow -d ${DOT_DIR}/home -t ${HOME} tmux
     stow -d ${DOT_DIR}/home -t ${HOME} vim
     stow -d ${DOT_DIR}/home -t ${HOME} gnupg
+    stow -d ${DOT_DIR}/home -t ${HOME} conda
 else
     echo "Please install GNU Stow before running installer"
 fi
